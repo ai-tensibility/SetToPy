@@ -14,53 +14,55 @@ Furthermore, we discuss the potential of constraint programming paradigms in enh
 
 Understanding the interconnectedness and transposability of set theory, matrices, algebra, and Cartesian grids provides valuable insights for coding and problem-solving. However, transforming these concepts back and forth incurs some "information" expense. For instance, a set can be ordered and converted into a matrix, such as:
 
-\[ S = \{(1,2), (3,4), (5,6)\} \]
+\[ S = {(1,2), (3,4), (5,6)} \]
 
 becoming a 3x2 matrix:
 
-\[ S = \begin{pmatrix} 1 & 2 \ 3 & 4 \ 5 & 6 \end{pmatrix} \]
+\[ S = ⎡ 1 & 2 ⎤
+     ⎢ 3 & 4 ⎥
+     ⎣ 5 & 6 ⎦ \]
 
-Conversely, matrices can be viewed as sets of rows or elements, but the inherent order in matrices may be lost when converting back to sets. Sets can form algebraic structures by defining operations, like the set \{0, 1, 2\} with addition modulo 3 forming a group, but the specific operations may not always translate back neatly to pure sets. Algebraic structures described as sets with operations may lose some operational context when viewed only as sets. Similarly, sets can represent points in a Cartesian grid, where elements act as coordinates, such as:
+Conversely, matrices can be viewed as sets of rows or elements, but the inherent order in matrices may be lost when converting back to sets. Sets can form algebraic structures by defining operations, like the set {0, 1, 2} with addition modulo 3 forming a group, but the specific operations may not always translate back neatly to pure sets. Algebraic structures described as sets with operations may lose some operational context when viewed only as sets. Similarly, sets can represent points in a Cartesian grid, where elements act as coordinates, such as:
 
-\[ \{(x_1, y_1, z_1), (x_2, y_2, z_2)\} \]
+\[ {(x₁, y₁, z₁), (x₂, y₂, z₂)} \]
 
 but spatial relationships may be lost when converting these points back into sets. This interconnectedness can be summarized as:
 
-\[ \{Set\} \leftrightarrow \{Algebra\} \leftrightarrow \{Matrix\} \leftrightarrow \{Cartesian Grid (3D)\} \]
+\[ {Set} ⇔ {Algebra} ⇔ {Matrix} ⇔ {Cartesian Grid (3D)} \]
 
-Or we can represent these transformations in lambda calculus as functions mapping from one set to another. Each transformation can be seen as a function \( f \) that takes an input from one set and produces an output in another set. Here's how we can represent this in lambda calculus:
+Or we can represent these transformations in lambda calculus as functions mapping from one set to another. Each transformation can be seen as a function f that takes an input from one set and produces an output in another set. Here's how we can represent this in lambda calculus:
 
 ### Transformations
 
 1. **Set to Algebra:**
-   \[ \lambda S. Algebra(S) \]
-   Here, \( Algebra(S) \) represents the transformation from a set \( S \) to its corresponding algebraic structure.
+   \[ λ S. Algebra(S) \]
+   Here, Algebra(S) represents the transformation from a set S to its corresponding algebraic structure.
 
 2. **Algebra to Matrix:**
-   \[ \lambda A. Matrix(A) \]
-   Here, \( Matrix(A) \) represents the transformation from an algebraic structure \( A \) to its corresponding matrix representation.
+   \[ λ A. Matrix(A) \]
+   Here, Matrix(A) represents the transformation from an algebraic structure A to its corresponding matrix representation.
 
 3. **Matrix to Cartesian Grid (3D):**
-   \[ \lambda M. CartesianGrid(M) \]
-   Here, \( CartesianGrid(M) \) represents the transformation from a matrix \( M \) to its corresponding Cartesian grid representation in 3D space.
+   \[ λ M. CartesianGrid(M) \]
+   Here, CartesianGrid(M) represents the transformation from a matrix M to its corresponding Cartesian grid representation in 3D space.
 
 ### Combined Transformation
 
 Combining these, we can represent the overall transformation as a composition of these functions:
 
-\[ \lambda S. CartesianGrid(Matrix(Algebra(S))) \]
+\[ λ S. CartesianGrid(Matrix(Algebra(S))) \]
 
-In a more general form, for any transformation \( f \) from set \( A \) to set \( B \), we can write:
+In a more general form, for any transformation f from set A to set B, we can write:
 
-\[ y = f(x) \quad \text{where} \quad x \in \{A\} \quad \text{and} \quad y \in \{B\} \]
+\[ y = f(x) \quad \text{where} \quad x ∈ {A} \quad \text{and} \quad y ∈ {B} \]
 
 For the specific chain of transformations:
 
-\[ \lambda S. CartesianGrid(Matrix(Algebra(S))) \]
+\[ λ S. CartesianGrid(Matrix(Algebra(S))) \]
 
 In lambda calculus notation, the transformation chain is expressed as:
 
-\[ \{Set\} \xrightarrow{\lambda S. Algebra(S)} \{Algebra\} \xrightarrow{\lambda A. Matrix(A)} \{Matrix\} \xrightarrow{\lambda M. CartesianGrid(M)} \{Cartesian Grid (3D)\} \]
+\[ {Set} → {λ S. Algebra(S)} → {Algebra} → {λ A. Matrix(A)} → {Matrix} → {λ M. CartesianGrid(M)} → {Cartesian Grid (3D)} \]
 
 ## Installation
 
@@ -104,7 +106,7 @@ Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTIN
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
