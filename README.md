@@ -1,5 +1,9 @@
 # SetTopy
 
+<p align="center">
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+</p>
+
 **SetTopy** is a Python library designed to showcase the interconnectedness and transposability of set theory, matrices, algebra, and Cartesian grids. This library aims to provide a robust framework for performing operations on sets and demonstrating the transformations between different mathematical abstractions.
 
 ## Organization Coding Guideline: Embracing Hybrid Paradigms for Scalable and Performant Code
