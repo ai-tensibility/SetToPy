@@ -1,6 +1,6 @@
-# Contributing to setPy
+# Contributing to SetTopy
 
-Thank you for considering contributing to setPy! We appreciate your help in improving the project.
+Thank you for considering contributing to SetTopy! We appreciate your help in improving the project.
 
 ## How to Contribute
 
@@ -8,8 +8,8 @@ Thank you for considering contributing to setPy! We appreciate your help in impr
 
 2. **Clone the Forked Repository**: Clone the forked repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/setPy.git
-   cd setPy
+   git clone https://github.com/yourusername/SetTopy.git
+   cd SetTopy
    ```
 
 3. **Create a New Branch**: Create a new branch for your changes.
