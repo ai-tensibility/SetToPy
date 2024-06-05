@@ -87,10 +87,10 @@ Note: We also explore the historical alignment of mathematics and coding in capt
 
 ## Installation
 
-To install SetTopy, use pip:
+To install SetToPy, use pip:
 
 ```bash
-pip install SetTopy
+pip install SetToPy
 ```
 
 ## Usage
