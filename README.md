@@ -22,9 +22,23 @@ Understanding the interconnectedness and transposability of set theory, matrices
 
 becoming a 3x2 matrix:
 
-\[ S = ⎡ 1 & 2 ⎤
-     ⎢ 3 & 4 ⎥
-     ⎣ 5 & 6 ⎦ \]
+S = 
+
+<table>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>6</td>
+  </tr>
+</table>
+
 
 Conversely, matrices can be viewed as sets of rows or elements, but the inherent order in matrices may be lost when converting back to sets. Sets can form algebraic structures by defining operations, like the set {0, 1, 2} with addition modulo 3 forming a group, but the specific operations may not always translate back neatly to pure sets. Algebraic structures described as sets with operations may lose some operational context when viewed only as sets. Similarly, sets can represent points in a Cartesian grid, where elements act as coordinates, such as:
 
