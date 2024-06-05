@@ -22,17 +22,14 @@ Understanding the interconnectedness and transposability of set theory, matrices
 
 becoming a 3x2 matrix:
 
-S = 
+\[
+S = \begin{bmatrix}
+1 & 2 \\
+3 & 4 \\
+5 & 6
+\end{bmatrix}
+\]
 
-<p>
-  &#91; 
-  <span style="display:inline-block;">
-    &#91; 1 &nbsp; 2 &#93;<br>
-    &#91; 3 &nbsp; 4 &#93;<br>
-    &#91; 5 &nbsp; 6 &#93;
-  </span> 
-  &#93;
-</p>
 
 
 
