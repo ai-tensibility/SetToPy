@@ -98,10 +98,10 @@ pip install SetTopy
 Here’s a simple example to get you started:
 
 ```python
-from settopy import SetTopy
+from settopy import SetToPy
 
 # Initialize set
-s = SetTopy()
+s = SetToPy()
 
 # Add elements
 s.add(1.0, 2.0, 3.0)
