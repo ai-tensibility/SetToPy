@@ -25,10 +25,11 @@ becoming a 3x2 matrix:
 S = 
 
 <div style="display: inline-block;">
-  &#91; 1 &nbsp; 2 &#93;<br>
-  &#124; 3 &nbsp; 4 &#124;<br>
-  &#91; 5 &nbsp; 6 &#93;
+  &#x250C; 1 &nbsp; 2 &#x2510;<br>
+  &#x2502; 3 &nbsp; 4 &#x2502;<br>
+  &#x2514; 5 &nbsp; 6 &#x2518;
 </div>
+
 
 
 
