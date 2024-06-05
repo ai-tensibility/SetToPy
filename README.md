@@ -32,10 +32,6 @@ S =
 
 
 
-
-
-
-
 Conversely, matrices can be viewed as sets of rows or elements, but the inherent order in matrices may be lost when converting back to sets. Sets can form algebraic structures by defining operations, like the set {0, 1, 2} with addition modulo 3 forming a group, but the specific operations may not always translate back neatly to pure sets. Algebraic structures described as sets with operations may lose some operational context when viewed only as sets. Similarly, sets can represent points in a Cartesian grid, where elements act as coordinates, such as:
 
 \[ {(x₁, y₁, z₁), (x₂, y₂, z₂)} \]
@@ -77,6 +73,17 @@ For the specific chain of transformations:
 In lambda calculus notation, the transformation chain is expressed as:
 
 \[ {Set} → {λ S. Algebra(S)} → {Algebra} → {λ A. Matrix(A)} → {Matrix} → {λ M. CartesianGrid(M)} → {Cartesian Grid (3D)} \]
+
+## Set Theory-Based Paradigm
+
+We demonstrate that our library "SetToPy" allows for building a foundational paradigm based on set theory, bypassing the traditional matrix-based approach. By employing advanced data structures and optimizing performance through lower-level languages like C++, we achieve efficiency nearly on par with the NumPy matrix framework.
+
+![Performance Output](performance_output_latest.png)
+
+While set theory-based coding standards show significant potential for future developments, our current focus does not include further exploration in this area. Instead, we will adhere to this new standard with these considerations in mind.
+
+Note: We also explore the historical alignment of mathematics and coding in capturing reality, tracing back to Kant and particularly emphasizing Frege's logic, which underpins modern computational languages.
+
 
 ## Installation
 
