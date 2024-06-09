@@ -85,8 +85,6 @@ While set theory-based coding standards show significant potential for future de
 Note: We also explore the historical alignment of mathematics and coding in capturing reality, tracing back to Kant and particularly emphasizing Frege's logic, which underpins modern computational languages.
 
 
-## Installation
-
 # Building and Setting Up the Project
 
 ## Prerequisites
