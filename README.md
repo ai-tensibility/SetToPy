@@ -86,6 +86,7 @@ Note: We also explore the historical alignment of mathematics and coding in capt
 
 
 # Building and Setting Up the Project
+SetToPy is a Python library for set theory operations using a C++ backend for performance. It leverages pybind11 to create Python bindings for C++ code. Currently, the package is tested and compiled on macOS with Apple Silicon (M2).
 
 ## Prerequisites
 
