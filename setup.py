@@ -9,15 +9,15 @@ ext_modules = [
         include_dirs=[pybind11.get_include()],
         language="c++",
         extra_compile_args=[
-            "-O3", "-funroll-loops", "-std=c++11",
+            "-O3",
+            "-funroll-loops",
+            "-std=c++11",
             "-I/opt/homebrew/include",
-            "-target", "arm64-apple-macos11",  # Ensure we target only arm64 architecture
-            "-mmacosx-version-min=11.0"  # Ensure compatibility with macOS 11.0 or later
+            "-target",
+            "arm64-apple-macos11",  # Ensure we target only arm64 architecture
+            "-mmacosx-version-min=11.0",  # Ensure compatibility with macOS 11.0 or later
         ],
-        extra_link_args=[
-            "-L/opt/homebrew/opt/libomp/lib",
-            "-lomp"
-        ],
+        extra_link_args=["-L/opt/homebrew/opt/libomp/lib", "-lomp"],
     ),
 ]
 
@@ -38,4 +38,3 @@ setup(
     install_requires=["pybind11"],
     setup_requires=["pybind11"],  # Ensure pybind11 is available during setup
 )
-

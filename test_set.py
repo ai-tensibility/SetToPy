@@ -1,6 +1,7 @@
 # test_settopy.py
 from settopy_bindings import SetToPy
 
+
 def main():
     s = SetToPy()
 
@@ -21,6 +22,7 @@ def main():
     # Test getting all elements
     elements = s.get_elements()
     print("Remaining elements:", elements)
+
 
 if __name__ == "__main__":
     main()
