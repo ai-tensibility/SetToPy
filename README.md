@@ -122,6 +122,8 @@ Note: We also explore the historical alignment of mathematics and coding in capt
    - Install `pybind11` within the Conda environment:
      ```sh
      conda install pybind11
+     conda install numpy
+     conda install matplotlib
      ```
 
 ## Building the Extension
