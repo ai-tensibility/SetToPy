@@ -187,9 +187,9 @@ print(s.get_elements())  # Output: [(4.0, 5.0, 6.0)]
 ```
 
 And run the above test script using following command:
-     ```sh
-     python test_set.py
-     ```
+```sh
+   python test_set.py
+```
 
 ## Contributing
 
