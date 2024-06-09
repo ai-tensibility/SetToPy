@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "SetToPy"
+version = "0.1.0"
+description = "A Python library for set theory operations using C++ backend"
+authors = ["Kan Yuenyong <kan.yuenyong@siamintelligenceunit.com>"]
+readme = "README.md"
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pybind11 = "^2.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+

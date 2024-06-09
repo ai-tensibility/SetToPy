@@ -26,7 +26,7 @@ os.environ["CC"] = "/opt/homebrew/opt/llvm/bin/clang"
 os.environ["CXX"] = "/opt/homebrew/opt/llvm/bin/clang++"
 
 setup(
-    name="settopy",
+    name="SetToPy",
     version="0.1.0",
     author="Kan Yuenyong",
     author_email="kan.yuenyong@siamintelligenceunit.com",
@@ -37,4 +37,6 @@ setup(
     zip_safe=False,
     install_requires=["pybind11"],
     setup_requires=["pybind11"],  # Ensure pybind11 is available during setup
+    license="Apache-2.0"
 )
+

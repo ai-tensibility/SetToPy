@@ -166,3 +166,4 @@ settopy.egg-info/
 
 # Exclude gitignore.txt
 gitignore.txt
+setup.py,bkp
