@@ -1,1 +1,1 @@
-from .settopy_bindings import SetTopy
+from .settopy_bindings import SetToPy

@@ -28,8 +28,8 @@ os.environ["CXX"] = "/opt/homebrew/opt/llvm/bin/clang++"
 setup(
     name="settopy",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Kan Yuenyong",
+    author_email="kan.yuenyong@siamintelligenceunit.com",
     description="A Python library for set theory operations using C++ backend",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
@@ -38,3 +38,4 @@ setup(
     install_requires=["pybind11"],
     setup_requires=["pybind11"],  # Ensure pybind11 is available during setup
 )
+

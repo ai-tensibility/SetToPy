@@ -18,11 +18,11 @@ PYBIND11_MODULE(settopy_bindings, m) {
                  return ss.str();
              });
 
-    py::class_<SetTopy>(m, "SetTopy")
+    py::class_<SetToPy>(m, "SetToPy")
         .def(py::init<>())
-        .def("add", &SetTopy::add)
-        .def("contains", &SetTopy::contains)
-        .def("remove", &SetTopy::remove)
-        .def("get_elements", &SetTopy::get_elements)
-        .def("size", &SetTopy::size);
+        .def("add", &SetToPy::add)
+        .def("contains", &SetToPy::contains)
+        .def("remove", &SetToPy::remove)
+        .def("get_elements", &SetToPy::get_elements)
+        .def("size", &SetToPy::size);
 }

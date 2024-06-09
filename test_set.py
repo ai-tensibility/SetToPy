@@ -1,8 +1,8 @@
 # test_settopy.py
-from settopy_bindings import SetTopy
+from settopy_bindings import settopy
 
 def main():
-    s = SetTopy()
+    s = settopy()
 
     # Test adding elements
     s.add(1.0, 2.0, 3.0)

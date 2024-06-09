@@ -87,11 +87,76 @@ Note: We also explore the historical alignment of mathematics and coding in capt
 
 ## Installation
 
-To install SetToPy, use pip:
+# Building and Setting Up the Project
 
-```bash
-pip install SetToPy
-```
+## Prerequisites
+
+1. **Install Miniforge**:
+   - Download the Miniforge installer for Apple Silicon (arm64):
+     ```sh
+     wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
+     ```
+   - Run the installer:
+     ```sh
+     bash Miniforge3-MacOSX-arm64.sh
+     ```
+
+2. **Create and Activate Conda Environment**:
+   - Create a new Conda environment with Python 3.9:
+     ```sh
+     conda create -n myenv python=3.9
+     ```
+   - Activate the environment:
+     ```sh
+     conda activate myenv
+     ```
+
+3. **Verify the Python Architecture**:
+   - Ensure the environment is set to use arm64 architecture:
+     ```sh
+     python -c "import platform; print(platform.machine())"
+     ```
+   - It should return `arm64`.
+
+## Installing Dependencies
+
+1. **Install `pybind11`**:
+   - Install `pybind11` within the Conda environment:
+     ```sh
+     conda install pybind11
+     ```
+
+## Building the Extension
+
+1. **Clean Previous Builds**:
+   - Remove any previous build artifacts:
+     ```sh
+     python setup.py clean --all
+     ```
+
+2. **Build the Extension**:
+   - Build the C++ extension using `setup.py`:
+     ```sh
+     python setup.py build
+     ```
+
+3. **Install the Extension**:
+   - Install the built extension into the Conda environment:
+     ```sh
+     python setup.py install
+     ```
+
+## Testing the Extension
+
+1. **Run the Performance Test**:
+   - Ensure the environment is activated:
+     ```sh
+     conda activate myenv
+     ```
+   - Run the performance test script:
+     ```sh
+     python test_performance.py
+     ```
 
 ## Usage
 

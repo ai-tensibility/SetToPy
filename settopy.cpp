@@ -34,7 +34,7 @@ struct HyperedgeHash {
     }
 };
 
-class SetTopy {
+class SetToPy {
 private:
     std::unordered_map<int, Node> nodes;
     std::unordered_set<Hyperedge, HyperedgeHash> hyperedges;

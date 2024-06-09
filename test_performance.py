@@ -1,7 +1,7 @@
 import time
 import numpy as np
 import matplotlib.pyplot as plt
-from settopy_bindings import SetTopy
+from settopy_bindings import SetToPy
 
 
 class Set:
@@ -39,9 +39,9 @@ def generate_random_pixels_set(screen_size):
             pixels.add((i, j, R))
     return pixels
 
-# Function to generate random pixels for SetTopy
+# Function to generate random pixels for SetToPy
 def generate_random_pixels_settopy(screen_size):
-    pixels = SetTopy()
+    pixels = SetToPy()
     for i in range(0, screen_size, 2):  # Reducing the number of iterations
         for j in range(0, screen_size, 2):  # Reducing the number of iterations
             R = (i * j) % 256
@@ -62,7 +62,7 @@ def calculate_brightness_set(pixel):
     x, y, value = pixel
     return x, y, 0.299 * value + 0.587 * value + 0.114 * value
 
-# Function to calculate brightness of a pixel for SetTopy
+# Function to calculate brightness of a pixel for SetToPy
 def calculate_brightness_settopy(element):
     x, y, value = element
     return x, y, 0.299 * value + 0.587 * value + 0.114 * value
@@ -81,10 +81,10 @@ def set_based_approach_simple(screen_size):
         brightness_set.add((brightness[0], brightness[1], int(brightness[2])))
     return brightness_set
 
-# Set-Based Approach for SetTopy class
+# Set-Based Approach for SetToPy class
 def set_based_approach_settopy(screen_size):
     pixels = generate_random_pixels_settopy(screen_size)
-    brightness_set = SetTopy()
+    brightness_set = SetToPy()
     elements = pixels.get_elements()
     for element in elements:
         brightness = calculate_brightness_settopy(element)
@@ -112,13 +112,13 @@ for size in screen_sizes:
     set_simple_times.append(avg_time)
     print(f"Simple Set-Based Approach - Screen Size {size}: {avg_time} seconds")
 
-    # Test with SetTopy class
+    # Test with SetToPy class
     start_time = time.time()
     set_based_approach_settopy(size)
     end_time = time.time()
     avg_time = (end_time - start_time)
     set_topy_times.append(avg_time)
-    print(f"SetTopy Set-Based Approach - Screen Size {size}: {avg_time} seconds")
+    print(f"SetToPy Set-Based Approach - Screen Size {size}: {avg_time} seconds")
 
     # Test with matrix-based approach
     start_time = time.time()
@@ -131,12 +131,12 @@ for size in screen_sizes:
 # Plotting the results
 plt.figure(figsize=(10, 5))
 plt.plot(screen_sizes, set_simple_times, label='Simple Set-Based Approach', marker='d')
-plt.plot(screen_sizes, set_topy_times, label='SetTopy Set-Based Approach', marker='d')
+plt.plot(screen_sizes, set_topy_times, label='SetToPy Set-Based Approach', marker='d')
 plt.plot(screen_sizes, matrix_times, label='Matrix-Based Approach', marker='x')
 plt.xlabel('Screen Size (NxN)')
 plt.ylabel('Average Execution Time (seconds)')
 plt.yscale('log')  # Set the y-axis to logarithmic scale
-plt.title('Execution Time Comparison: Simple Set vs SetTopy vs Matrix-Based Approach')
+plt.title('Execution Time Comparison: Simple Set vs SetToPy vs Matrix-Based Approach')
 plt.legend()
 plt.grid(True)
 plt.show()
