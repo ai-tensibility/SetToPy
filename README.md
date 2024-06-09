@@ -118,8 +118,8 @@ Note: We also explore the historical alignment of mathematics and coding in capt
 
 ## Installing Dependencies
 
-1. **Install `pybind11`**:
-   - Install `pybind11` within the Conda environment:
+1. **Install neccessary libraries**:
+   - Install `pybind11`, `numpy` and `matplotlib` within the Conda environment:
      ```sh
      conda install pybind11
      conda install numpy
@@ -185,6 +185,11 @@ print(s.size())  # Output: 1
 # Convert to list
 print(s.get_elements())  # Output: [(4.0, 5.0, 6.0)]
 ```
+
+And run the above test script using following command:
+     ```sh
+     python test_set.py
+     ```
 
 ## Contributing
 
